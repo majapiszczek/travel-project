@@ -3,7 +3,10 @@ body {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.6),
+      rgba(39, 32, 68, 0.6)
+    ),
     url(/images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -48,6 +51,44 @@ header a {
   margin: 32px 0;
 }
 
+footer {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url(/images/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 40px;
+  padding: 100px 170px;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.6;
+}
+
+footer a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.6;
+  text-decoration: none;
+  color: white;
+}
+
 .container {
   display: block;
   margin: 0 auto;
@@ -68,6 +109,24 @@ header a {
   }
 
   header h3 {
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 10px 20px;
+    grid-gap: 15px;
+  }
+
+  footer h3 {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  footer a {
     font-size: 12px;
   }
 }
