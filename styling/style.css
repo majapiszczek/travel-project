@@ -92,6 +92,61 @@ footer a {
 
 section {
   padding: 100px;
+  color: #272044;
+}
+
+section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.7;
+}
+
+section h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+section h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+section h4 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+section h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+section h6 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+section a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 3px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #462cb2;
+  padding: 16px 95px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
 }
 
 .container {
@@ -107,30 +162,33 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 60px;
-  color: #272044;
 }
 
-.about-berlin h3 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-
-  opacity: 0.3;
+.cafe-cards {
+  background-color: #f8f8f8;
 }
 
-.about-berlin h2 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
+.cafe-cards h2,
+h3 {
+  text-align: center;
 }
 
-.about-berlin p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  opacity: 0.7;
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.cards div {
+  background-color: white;
+}
+
+.card-body {
+  padding: 24px 32px;
+}
+
+.card-footer {
+  padding: 20px 0;
 }
 
 @media (max-width: 900px) {
@@ -164,5 +222,9 @@ section {
   .about-berlin {
     grid-template-columns: 1fr;
     grid-gap: 30px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
   }
 }
