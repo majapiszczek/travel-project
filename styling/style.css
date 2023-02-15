@@ -259,3 +259,20 @@ section a {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media (max-width: 400px) {
+  section {
+    padding: 10px;
+  }
+
+  section h4,
+  section h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
