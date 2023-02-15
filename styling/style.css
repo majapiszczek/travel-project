@@ -182,12 +182,28 @@ section a {
   background-color: white;
 }
 
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .card-body {
   padding: 24px 32px;
 }
 
 .card-footer {
   padding: 20px 0;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
 }
 
 @media (max-width: 900px) {
@@ -225,5 +241,21 @@ section a {
 
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .card-header {
+    grid-template-columns: 1fr;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
