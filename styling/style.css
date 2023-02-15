@@ -154,6 +154,10 @@ section a {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .img-responsive {
   max-width: 100%;
 }
@@ -166,11 +170,6 @@ section a {
 
 .cafe-cards {
   background-color: #f8f8f8;
-}
-
-.cafe-cards h2,
-h3 {
-  text-align: center;
 }
 
 .cards {
